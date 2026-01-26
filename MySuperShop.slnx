@@ -1,4 +1,6 @@
 <Solution>
   <Project Path="MySuperShop/MySuperShop.csproj" />
+  <Project Path="MySuperShopData/MySuperShopData.csproj" Id="cef31739-5ed4-434a-803a-ae40d3c5cb57" />
   <Project Path="MySuperShopModel/MySuperShopModel.csproj" Id="6ea3c0e7-d012-474a-8096-df7034c297b2" />
+  <Project Path="MySuperShopServies/MySuperShopServies.csproj" Id="451d7749-3e0d-4dda-a8e3-e04b103cd026" />
 </Solution>
