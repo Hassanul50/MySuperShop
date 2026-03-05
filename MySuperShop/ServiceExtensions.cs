@@ -3,8 +3,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using MySuperShopData.DB;
-using MySuperShopModel.DTOs;
+using MySuperShopModel.DTOs.Request;
 using MySuperShopModel.Entities;
+using MySuperShopServies.Implementations;
+using MySuperShopServies.Interface;
 using System.Text;
 
 namespace MySuperShop
@@ -24,6 +26,7 @@ namespace MySuperShop
             // 2️⃣ Configure Password Hasher
             // ------------------------
             services.AddScoped<IPasswordHasher<UserDTO>, PasswordHasher<UserDTO>>();
+            services.AddScoped<ILogInService, LogInService>();
 
             // ------------------------
             // 3️⃣ Configure JWT Authentication
